@@ -11,4 +11,4 @@ COPY requirements.txt /app/
 
 RUN pip install --no-cache-dir -r requirements.txt
 # Запускает команду makemigrations для создания файлов миграции на основе изменений в моделях
-RUN python manage.py makemigrations
+RUN pip install gunicorn
