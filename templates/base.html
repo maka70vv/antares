@@ -1,0 +1,198 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="{% static "ico/favicon.ico" %}">
+
+    <title>АНТАРЕС ПРОФСТРОЙ</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static "css/bootstrap.css"%}" rel="stylesheet">
+
+
+    <!-- Custom styles for this template -->
+    <link href="{% static "css/style2.css"%}" rel="stylesheet">
+    <link href="{% static "css/font-awesome.min.css"%}" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+
+<!-- Static navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color: black;">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html" style="margin-top:15px; color: white; font-size:30px;">АнтаресПрофстрой</a>
+        </div>
+
+        <div style="width:50%; float:right; display: flex; align-items: center; justify-content: flex-end; margin-top: 10px;">
+            <div style="color: white; font-size:18px; margin-right: 20px;">+ 996 555‒37‒27‒17</div>
+
+            <a href="https://www.instagram.com/antaresprofstroy.kg/" target="_blank" style="margin-right: 10px;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram"
+                     width="30">
+            </a>
+            <a href="https://t.me/" target="_blank" style="margin-right: 10px;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram"
+                     width="30">
+            </a>
+            <a href="https://wa.me/996555372717" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="30">
+            </a>
+        </div>
+    </div>
+</div>
+
+        {% block content %}
+
+        {% endblock content %}
+
+
+<div class="container">
+    <div class="row centered mt mb">
+        <h1 style="font-size: 36px;">Контакты</h1>
+        <br>
+
+
+        <div class="col-lg-4 col-md-4 col-sm-4" style="font-size: 22px; font-weight: bold;">г. Бишкек, ул. Байтик Баатыр
+            36/3
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4" style="font-size: 22px; font-weight: bold;">+996 555 37 27 17</div>
+        <div class="col-lg-4 col-md-4 col-sm-4" style="font-size: 22px; font-weight: bold;">
+            antaresprofstroy.kg@gmail.com
+        </div>
+
+        <!-- Блок для иконок соцсетей -->
+        <div class="col-lg-12 col-md-12 col-sm-12 text-center" style="margin-top: 20px;">
+            <a href="https://www.instagram.com/antaresprofstroy.kg/" target="_blank" style="margin: 0 10px;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram"
+                     width="40">
+            </a>
+            <a href="https://wa.me/996555372717" target="_blank" style="margin: 0 10px;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="40">
+            </a>
+            <a href="https://t.me/" target="_blank" style="margin: 0 10px;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram"
+                     width="40">
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<div id="google" style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100vh;">
+    <div>
+        <a class="dg-widget-link"
+           href="http://2gis.kg/bishkek/firm/70000001037094642/center/74.59802627563478,42.8584127398023/zoom/14?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть
+            на карте Бишкека</a>
+        <div class="dg-widget-link">
+            <a href="http://2gis.kg/bishkek/firm/70000001037094642/photos/70000001037094642/center/74.59802627563478,42.8584127398023/zoom/17?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=photos">Фотографии
+                компании</a>
+        </div>
+        <div class="dg-widget-link">
+            <a href="http://2gis.kg/bishkek/center/74.606364,42.848686/zoom/14/routeTab/rsType/bus/to/74.606364,42.848686╎Антарес ПрофСтрой, компания?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти
+                проезд до Антарес ПрофСтрой, компания</a>
+        </div>
+        <script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script>
+        <script charset="utf-8">
+            new DGWidgetLoader({
+                "width": 1200,
+                "height": 500,
+                "borderColor": "#a3a3a3",
+                "pos": {"lat": 42.8584127398023, "lon": 74.59802627563478, "zoom": 14},
+                "opt": {"city": "bishkek"},
+                "org": [{"id": "70000001037094642"}]
+            });
+        </script>
+        <noscript style="color:#c00;font-size:16px;font-weight:bold;">
+            Виджет карты использует JavaScript. Включите его в настройках вашего браузера.
+        </noscript>
+    </div>
+</div>
+
+
+<script src="{% static "css/jquery-1.8.2.min.js"%}" type="text/javascript"></script>
+
+
+<script language='javascript' type='text/javascript'>
+    function fulltime() {
+        var time = new Date();
+        var newYear = new Date("jan,01,2019,00:00:00");
+        var totalRemains = (newYear.getTime() - time.getTime());
+
+        if (totalRemains > 1) {
+
+            var RemainsSec = (parseInt(totalRemains / 1000));
+            var RemainsFullDays = (parseInt(RemainsSec / (24 * 60 * 60)));
+            var secInLastDay = RemainsSec - RemainsFullDays * 24 * 3600;
+            var RemainsFullHours = (parseInt(secInLastDay / 3600));
+            if (RemainsFullHours < 10) {
+                RemainsFullHours = "0" + RemainsFullHours
+            }
+            ;
+            var secInLastHour = secInLastDay - RemainsFullHours * 3600;
+            var RemainsMinutes = (parseInt(secInLastHour / 60));
+            if (RemainsMinutes < 10) {
+                RemainsMinutes = "0" + RemainsMinutes
+            }
+            ;
+            var lastSec = secInLastHour - RemainsMinutes * 60;
+            if (lastSec < 10) {
+                lastSec = "0" + lastSec
+            }
+            ;
+
+            document.getElementById("RemainsFullDays").innerHTML = RemainsFullDays + "";
+            document.getElementById("RemainsFullHours").innerHTML = RemainsFullHours + "";
+            document.getElementById("RemainsMinutes").innerHTML = RemainsMinutes + "";
+            document.getElementById("lastSec").innerHTML = lastSec + "";
+            setTimeout('fulltime()', 10)
+        } else {
+            document.getElementById("clock").innerHTML = "Прием заявок со скидками окончен!";
+        }
+    }
+</script>
+
+<script language='javascript'>fulltime();</script>
+
+
+<div id="footerwrap">
+    <div class="container">
+        <div class="row centered">
+            <div class="col-lg-4">
+                <p><b>ОсОО "Антарес ПрофСтрой</b></p>
+            </div>
+
+            <div class="col-lg-4">
+                <p>Ваш надежный партнер для инженерного обеспечения.</p>
+            </div>
+            <div class="col-lg-4">
+                <p>lorem ipsum <a href="https://morepsd.ru/category/sites/tilda-templates/"></a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<! --/footerwrap -->
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="{% static "js/bootstrap.min.js"%}"></script>
+
+</body>
+</html>

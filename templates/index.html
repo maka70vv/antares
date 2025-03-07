@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+	<div id="headerwrap">
+	    <div class="container">
+			<div class="row">
+            <div class="col-lg-6">
+                <h1 style="font-size: 55px;">Инженерная сантехника премиум класса</h1>
+                <h1 style="font-size: 50px;">Профессиональный фасадный крепеж</h1>
+            </div>
+        </div>
+
+			</div><! --/row -->
+	    </div> <!-- /container -->
+
+
+<hr>
+	
+<section id="works" style="position: relative; padding: 50px 0;">
+    <!-- Затемнение фона -->
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 1;"></div>
+
+    <!-- Контейнер с контентом -->
+    <div class="container" style="position: relative; z-index: 2; background-size: cover; padding: 50px;">
+        <div class="row centered mt mb">
+            <h1 style="color: white;">Наша продукция</h1>
+                        <div class="col-md-4 gallery">
+                            <div id="exp" class="experts_box">
+                                <div class="experts_img">
+                                    <figure>
+                                        <img src="{% static "img/portfolio/sinikon.png"%}" alt="#" class="img-responsive"/>
+                                        <div class="price">SINIKON</div>
+                                    </figure>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-4 gallery">
+                            <div id="exp" class="experts_box">
+                                <div class="experts_img">
+                                    <figure>
+                                        <img src="{% static "img/portfolio/square_2.png"%}" alt="#" class="img-responsive"/>
+                                        <div class="price">MAYER</div>
+                                    </figure>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-4 gallery">
+                            <div id="exp" class="experts_box">
+                                <div class="experts_img">
+                                    <figure>
+                                        <img src="{% static "img/portfolio/square_1.png"%}" alt="#" class="img-responsive"/>
+                                        <div class="price">FUSITEK</div>
+                                    </figure>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-4 gallery">
+                            <div id="exp" class="experts_box">
+                                <div class="experts_img">
+                                    <figure>
+                                        <img src="{% static "img/portfolio/rommer_centered.png"%}" alt="#" class="img-responsive"/>
+                                        <div class="price">ROMMER</div>
+                                    </figure>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-4 gallery">
+                            <div id="exp" class="experts_box">
+                                <div class="experts_img">
+                                    <figure>
+                                        <img src="{% static "img/portfolio/square_0.png"%}" alt="#" class="img-responsive"/>
+                                        <div class="price">BAU-FIX</div>
+                                    </figure>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-4 gallery">
+                            <div id="exp" class="experts_box">
+                                <div class="experts_img">
+                                    <figure>
+                                        <img src="{% static "img/portfolio/фиксатор_centered_500x500.png"%}" alt="#" class="img-responsive"/>
+                                        <div class="price">ФИКСАТОР</div>
+                                    </figure>
+                                </div>
+
+                            </div>
+                        </div>
+
+        </div><!-- /row -->
+    </div><!-- /container -->
+</section>
+
+<hr>
+
+	<div id="why">
+	<div id="w">
+	    <div class="container" style="">
+			<div class="row">
+		<div class="row centered mt mb">
+			<h1>Почему мы</h1>
+			
+			<div class="col-lg-4 col-md-4 col-sm-4 gallery principles">
+				<img src="{% static "img/icons/Nature_&_outdoors_05.svg"%}" class="img-responsive"><h4>Быстро. Чисто. Надежно – сантехника с комфортом!</h4>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 gallery principles">
+				<img src="{% static "img/icons/Nature_&_outdoors_02.svg"%}" class="img-responsive">
+				<h4>Индивидуальный подход</h4>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 gallery principles">
+				<img src="{% static "img/icons/Nature_&_outdoors_03.svg"%}" class="img-responsive"><h4>Опыт и профессионализм</h4>
+			</div>
+        </div>
+			</div><! --/row -->
+	    </div> <!-- /container -->
+	</div><! --/why -->
+</div>
+{% endblock content %}

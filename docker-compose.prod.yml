@@ -1,0 +1,99 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:15.0-alpine
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    networks:
+      - my-network
+    env_file:
+      - .env
+    ports:
+      - "5433:5432"
+    restart: always
+
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+    command: gunicorn --workers=4 antares.wsgi:application --bind 0.0.0.0:8000
+    expose:
+      - "8000"
+    volumes:
+      - ./staticfiles:/var/www/staticfiles
+      - ./media:/var/www/media
+      - ./static:/var/www/static
+
+    networks:
+      - my-network
+    depends_on:
+      - db
+    env_file:
+      - .env
+    entrypoint: ./entrypoint.sh
+    restart: always
+
+  nginx:
+    build: ./nginx
+    depends_on:
+      - web
+    ports:
+      - "80:80"
+      - "443:443"
+    restart: always
+    volumes:
+      - ./media:/var/www/media
+      - ./static:/var/www/static
+      - ./staticfiles:/var/www/staticfiles
+    networks:
+      - my-network
+
+  certbot_main:
+    image: certbot/certbot
+    container_name: certbot_main
+    volumes:
+      - ./certbot/conf:/etc/letsencrypt
+      - ./certbot/www:/var/www/certbot
+    entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'"
+
+#    command: certonly --webroot --webroot-path=/home/antares_web/certbot/www --email u.kuvanychbekov@gmail.com --agree-tos --no-eff-email -d aps.kg
+    depends_on:
+      - nginx
+    networks:
+      - my-network
+    restart: always
+
+  redis:
+    image: redis:7.0.11
+    networks:
+      - my-network
+    restart: always
+
+#  worker:
+#    build: .
+#    command: celery -A antares_web worker --loglevel=info
+#    depends_on:
+#      - redis
+#    networks:
+#      - my-network
+#    restart: always
+#
+#  beat:
+#    build: .
+#    command: celery -A antares_web beat --loglevel=info
+#    depends_on:
+#      - redis
+#    networks:
+#      - my-network
+#    restart: always
+
+volumes:
+  postgres_data:
+  staticfiles:
+  static:
+  media:
+
+networks:
+  my-network:
