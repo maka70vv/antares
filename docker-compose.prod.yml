@@ -46,6 +46,8 @@ services:
       - ./media:/var/www/media
       - ./static:/var/www/static
       - ./staticfiles:/var/www/staticfiles
+      - ./certbot/conf:/etc/letsencrypt
+      - ./certbot/www:/var/www/certbot
     networks:
       - my-network
 
