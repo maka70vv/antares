@@ -20,7 +20,6 @@ services:
     volumes:
       - ./static:/var/www/static
       - ./media:/var/www/media
-      - ./staticfiles:/var/www/staticfiles
     networks:
       - my-network
     depends_on:

@@ -22,7 +22,6 @@ services:
     expose:
       - "8000"
     volumes:
-      - ./staticfiles:/var/www/staticfiles
       - ./media:/var/www/media
       - ./static:/var/www/static
 
