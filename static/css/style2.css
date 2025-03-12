@@ -106,7 +106,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: Left;
     background-attachment: relative;
     background-position: bottom center;
-    min-height: 850px;
+    min-height: 650px;
     width: 100%;
 
     -webkit-background-size: 100%;
@@ -221,7 +221,7 @@ hr {
     text-align: Left;
     background-attachment: relative;
     background-position: center center;
-    min-height: 450px;
+    min-height: 350px;
     width: 100%;
 
     -webkit-background-size: 100%;
@@ -239,13 +239,21 @@ hr {
 #contacts div {
     color: white !important;
 }
+
+#con-w {
+    background: rgba(50, 50, 50, 0.5);
+    margin-top: 0px;
+    padding-top: 0px;
+    color: white;
+}
+
 #google {
     margin-top: 0px;
     padding-top: 0px;
     text-align: Left;
     background-attachment: relative;
     background-position: center center;
-    min-height: 450px;
+    min-height: 350px;
     width: 100%;
 
     -webkit-background-size: 100%;
@@ -427,4 +435,3 @@ a:hover .button {
 
 .gallery h4 {
     color: white;
-}

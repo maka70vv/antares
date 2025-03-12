@@ -2,19 +2,19 @@
 {% load static %}
 {% block content %}
 	<div id="headerwrap">
-	    <div class="container">
-			<div class="row">
+    <div class="container">
+        <div class="row">
             <div class="col-lg-6 text-left">
                 <h1 style="font-size: clamp(24px, 4vw, 50px);">Инженерная сантехника премиум класса</h1>
             </div>
             <div class="col-lg-6 text-right">
-                <h1 style="font-size: clamp(24px, 4vw, 50px);">Профессиональный фасадный крепеж</h1>
+                <h1 style="font-size: clamp(24px, 4vw, 50px); display: inline-block; text-align: right;">
+                    Профессиональный<br> фасадный<br> крепеж
+                </h1>
             </div>
         </div>
-
-			</div><! --/row -->
-	    </div> <!-- /container -->
-
+    </div> <!-- /container -->
+</div> <!-- /headerwrap -->
 
 <hr>
 	
@@ -26,75 +26,107 @@
     <div class="container" style="position: relative; z-index: 2; background-size: cover; padding: 50px;">
         <div class="row centered mt mb">
             <h1 style="color: white;">Наша продукция</h1>
-                        <div class="col-md-4 gallery">
-                            <div id="exp" class="experts_box">
-                                <div class="experts_img">
-                                    <figure>
-                                        <img src="{% static "img/portfolio/sinikon.png"%}" alt="#" class="img-responsive"/>
-                                        <div class="price">SINIKON</div>
-                                    </figure>
-                                </div>
 
-                            </div>
-                        </div>
-                        <div class="col-md-4 gallery">
-                            <div id="exp" class="experts_box">
-                                <div class="experts_img">
-                                    <figure>
-                                        <img src="{% static "img/portfolio/square_2.png"%}" alt="#" class="img-responsive"/>
-                                        <div class="price">MAYER</div>
-                                    </figure>
-                                </div>
+            <div class="col-md-4 gallery">
+                <div id="exp" class="experts_box">
+                    <div class="experts_img">
+                        <figure>
+                            <img src="{% static 'img/portfolio/5.png' %}" alt="#" class="img-responsive"/>
+                            <div class="price">FUSITEK</div>
+                        </figure>
+                    </div>
+                </div>
+            </div>
 
-                            </div>
-                        </div>
-                        <div class="col-md-4 gallery">
-                            <div id="exp" class="experts_box">
-                                <div class="experts_img">
-                                    <figure>
-                                        <img src="{% static "img/portfolio/square_1.png"%}" alt="#" class="img-responsive"/>
-                                        <div class="price">FUSITEK</div>
-                                    </figure>
-                                </div>
+            <div class="col-md-4 gallery">
+                <div id="exp" class="experts_box">
+                    <div class="experts_img">
+                        <figure>
+                            <img src="{% static 'img/portfolio/3.png' %}" alt="#" class="img-responsive"/>
+                            <div class="price">SINIKON</div>
+                        </figure>
+                    </div>
+                </div>
+            </div>
 
-                            </div>
-                        </div>
-                        <div class="col-md-4 gallery">
-                            <div id="exp" class="experts_box">
-                                <div class="experts_img">
-                                    <figure>
-                                        <img src="{% static "img/portfolio/rommer_centered.png"%}" alt="#" class="img-responsive"/>
-                                        <div class="price">ROMMER</div>
-                                    </figure>
-                                </div>
+            <div class="col-md-4 gallery">
+                <div id="exp" class="experts_box">
+                    <div class="experts_img">
+                        <figure>
+                            <img src="{% static 'img/portfolio/2.png' %}" alt="#" class="img-responsive"/>
+                            <div class="price">ROMMER</div>
+                        </figure>
+                    </div>
+                </div>
+            </div>
 
-                            </div>
-                        </div>
-                        <div class="col-md-4 gallery">
-                            <div id="exp" class="experts_box">
-                                <div class="experts_img">
-                                    <figure>
-                                        <img src="{% static "img/portfolio/square_0.png"%}" alt="#" class="img-responsive"/>
-                                        <div class="price">BAU-FIX</div>
-                                    </figure>
-                                </div>
+            <div class="col-md-4 gallery">
+                <div id="exp" class="experts_box">
+                    <div class="experts_img">
+                        <figure>
+                            <img src="{% static 'img/portfolio/9.png' %}" alt="#" class="img-responsive"/>
+                            <div class="price">STOUT</div>
+                        </figure>
+                    </div>
+                </div>
+            </div>
 
-                            </div>
-                        </div>
-                        <div class="col-md-4 gallery">
-                            <div id="exp" class="experts_box">
-                                <div class="experts_img">
-                                    <figure>
-                                        <img src="{% static "img/portfolio/фиксатор_centered_500x500.png"%}" alt="#" class="img-responsive"/>
-                                        <div class="price">ФИКСАТОР</div>
-                                    </figure>
-                                </div>
+            <div class="col-md-4 gallery">
+                <div id="exp" class="experts_box">
+                    <div class="experts_img">
+                        <figure>
+                            <img src="{% static 'img/portfolio/7.png' %}" alt="#" class="img-responsive"/>
+                            <div class="price">ФИКСАТОР</div>
+                        </figure>
+                    </div>
+                </div>
+            </div>
 
-                            </div>
-                        </div>
+            <div class="col-md-4 gallery">
+                <div id="exp" class="experts_box">
+                    <div class="experts_img">
+                        <figure>
+                            <img src="{% static 'img/portfolio/6.png' %}" alt="#" class="img-responsive"/>
+                            <div class="price">MAYER</div>
+                        </figure>
+                    </div>
+                </div>
+            </div>
 
-        </div><!-- /row -->
-    </div><!-- /container -->
+            <div class="col-md-4 gallery">
+                <div id="exp" class="experts_box">
+                    <div class="experts_img">
+                        <figure>
+                            <img src="{% static 'img/portfolio/8.png' %}" alt="#" class="img-responsive"/>
+                            <div class="price">MPOC</div>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 gallery">
+                <div id="exp" class="experts_box">
+                    <div class="experts_img">
+                        <figure>
+                            <img src="{% static 'img/portfolio/1.png' %}" alt="#" class="img-responsive"/>
+                            <div class="price">ЦЕНТР САНТЕХНИКИ</div>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 gallery">
+                <div id="exp" class="experts_box">
+                    <div class="experts_img">
+                        <figure>
+                            <img src="{% static 'img/portfolio/4.png' %}" alt="#" class="img-responsive"/>
+                            <div class="price">BAU-FIX</div>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <hr>
@@ -104,6 +136,7 @@
         <div class="container">
             <div class="row centered mt mb">
                 <div class="row">
+                    <h1>Почему выбирают нас?</h1>
                     <div class="col-lg-6 col-md-6 col-sm-12">
                         <h1>Инженерная сантехника премиум класса</h1>
                         <p>
@@ -111,7 +144,7 @@
                             которые соответствуют самым строгим стандартам. Наши продукты — это гарантия долговечности,
                             надежности и современного дизайна. Мы сотрудничаем только с проверенными брендами,
                             которые зарекомендовали себя на рынке и отвечают всем требованиям по эффективности и безопасности.
-                            Ваш комфорт и спокойствие — наш приоритет.
+
                         </p>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12">
@@ -124,12 +157,14 @@
                         </p>
                     </div>
                 </div>
+                <h1>Ваш комфорт и спокойствие — наш приоритет!</h1>
             </div>
         </div>
     </div>
 </div>
 <hr>
 <div id="contacts">
+     <div id="con-w">
     <div class="container">
     <div class="row centered mt mb">
         <h1 style="font-size: 36px; text-white">Контакты</h1>
@@ -159,11 +194,12 @@
     </div>
 </div>
 </div>
+</div>
 
 <hr>
 
 <div id="google">
-    <div style="width: 100%; height: 100%;">
+    <div style="width: 100%; height: 80%;">
         <script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script>
         <script charset="utf-8">
             new DGWidgetLoader({
