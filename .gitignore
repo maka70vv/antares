@@ -3,3 +3,5 @@
 entrypoint.sh
 .idea
 certbot
+__pycache__
+db.sqlite3
