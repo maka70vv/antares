@@ -100,7 +100,7 @@ h1, h2, h3, h4, h5, h6 {
    ========================================================================== */
 
 #headerwrap {
-    background: url(../img/jeshoots-com.jpg) no-repeat center top fixed;
+    background: url(../img/webp/jeshoots-com.webp) no-repeat center top fixed;
     margin-top: 0px;
     padding-top: 250px;
     text-align: Left;
@@ -121,7 +121,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #works {
-    background: url('../img/background.jpg') no-repeat center top fixed;
+    background: url('../img/webp/background.webp') no-repeat center top fixed;
     margin-top: 0px;
     padding-top: 250px;
     text-align: Left;
@@ -194,7 +194,7 @@ hr {
 
 
 #why {
-    background: #444 url(../img/bucket2.jpg) no-repeat center top fixed;
+    background: #444 url(../img/webp/bucket2.webp) no-repeat center top fixed;
     margin-top: 0px;
     padding-top: 0px;
     text-align: Left;
@@ -215,7 +215,7 @@ hr {
 }
 
 #contacts {
-    background: #444 url(../img/cont.jpg) no-repeat center top fixed;
+    background: #444 url(../img/webp/cont.webp) no-repeat center top fixed;
     margin-top: 0px;
     padding-top: 0px;
     text-align: Left;
