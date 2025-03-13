@@ -183,12 +183,12 @@ hr {
 }
 
 
-#exp:hover .experts_img figure img {
-    border-top: #ffffff solid 20px;
-    border-bottom: #ffffff solid 20px;
-    border-left: #ffffff solid 20px;
-    border-right: #ffffff solid 20px;
-}
+/*#exp:hover .experts_img figure img {*/
+/*    border-top: #ffffff solid 5px;*/
+/*    border-bottom: #ffffff solid 5px;*/
+/*    border-left: #ffffff solid 5px;*/
+/*    border-right: #ffffff solid 5px;*/
+/*}*/
 
 /* End card section */
 
@@ -435,3 +435,4 @@ a:hover .button {
 
 .gallery h4 {
     color: white;
+}
