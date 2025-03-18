@@ -16,7 +16,7 @@
 
 
     <!-- Custom styles for this template -->
-    <link href="{% static "css/style2.css"%}" rel="stylesheet">
+
     <link href="{% static "css/font-awesome.min.css"%}" rel="stylesheet">
 
 
@@ -35,7 +35,7 @@
 <div class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color: black;">
     <div class="container" style="display: flex; align-items: center; justify-content: space-between; padding: 10px 0;">
         <div class="navbar-header">
-            <a class="navbar-brand" href="index.html" style="color: white; font-size: 30px;">АнтаресПрофстрой</a>
+            <a class="navbar-brand" href="{% url 'index' %}" style="color: white; font-size: 30px;">АнтаресПрофстрой</a>
         </div>
 
         <div style="display: flex; align-items: center;">
@@ -74,7 +74,7 @@
     <div class="container">
         <div class="row centered">
             <div class="col-lg-4">
-                <p><b>ОсОО "Антарес ПрофСтрой</b></p>
+                <p><b>ОсОО "Антарес ПрофСтрой"</b></p>
                  <p>Ваш надежный партнер для инженерного обеспечения.</p>
             </div>
 

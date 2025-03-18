@@ -1,0 +1,114 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<hr>
+<link rel="stylesheet" href="{% static 'css/style3.css' %}">
+
+<section id="works2">
+    <div id="overlay">
+        <div class="header">
+            <div class="header-card">
+                <img src="{% static 'img/Fusitek/fusitek.png' %}" alt="Fusitek Логотип">
+            </div>
+        </div>
+
+        <div class="header-card">
+            <h1>Fusitek – инновационные полимерные трубопроводные системы</h1>
+            <p>
+                Fusitek — это безупречное качество на каждом этапе производства.
+                Используется только первичное сырьё: прочный полипропилен, стекловолоконная
+                арматура (20-28%) и лучший японский адгезив Admer, предотвращающий расслоение
+                алюминиевых труб. Для фитингов и шаровых кранов применяется латунь CW617N/CW614N
+                с низким содержанием свинца, что делает их безопасными для систем питьевого
+                водоснабжения. Высокие стандарты, передовые технологии и надёжность, проверенная временем.
+            </p>
+        </div>
+
+        <div class="header-card">
+            <h1>Компания Fusitek производит:</h1>
+        </div>
+
+        <div class="advantages">
+            <div class="card" style="display: flex; align-items: center; justify-content: space-between; padding: 10px;">
+                <div class="card-text" style="flex: 1;">
+                <h3>Трубы</h3>
+                    <ul>
+                        <li>ППР трубы SDR11, SDR7.4, SDR6</li>
+                        <li>Армированные алюминием</li>
+                        <li>Армированные стекловолокном</li>
+                        <li>PE-RT и PE-RT/EVOH для тёплого пола</li>
+                    </ul>
+                </div>
+                <div class="card-image" style="padding-right: 10px;">
+                    <img src="{% static 'img/Fusitek/plastic_truby.png' %}"
+                    style="max-width: 180px; height: auto; margin-top: 30px;">
+                </div>
+            </div>
+
+            <div class="card" style="display: flex; align-items: center; justify-content: space-between; padding: 10px;">
+                <div class="card-text" style="flex: 1;">
+                <h3>Фитинги</h3>
+                    <ul>
+                        <li>Муфты, угольники, тройники, крестовины</li>
+                        <li>Обводы, заглушки, опоры, втулки под фланец</li>
+                        <li>Настенные комплекты для смесителя</li>
+                        <li>Разъемные соединения (американки), фильтры</li>
+                    </ul>
+                </div>
+                <div class="card-image" style="padding-right: 10px;">
+                    <img src="{% static 'img/Fusitek/polipropilenovye-fitingi.webp' %}"
+                    style="max-width: 180px; height: auto; margin-top: 30px;">
+                </div>
+            </div>
+
+            <div class="card" style="display: flex; align-items: center; justify-content: space-between; padding: 10px;">
+                <div class="card-text" style="flex: 1;">
+                <h3>Краны ППР</h3>
+                    <ul>
+                        <li>Радиаторные краны</li>
+                        <li>Шаровые краны</li>
+                    </ul>
+                </div>
+                <div class="card-image" style="padding-right: 10px;">
+                    <img src="{% static 'img/Fusitek/Краны.jpg' %}"
+                    style="max-width: 180px; height: auto; margin-top: 30px;">
+                </div>
+            </div>
+
+            <div class="card" style="display: flex; align-items: center; justify-content: space-between; padding: 10px;">
+                <div class="card-text" style="flex: 1;">
+                <h3>Инструменты</h3>
+                    <ul>
+                        <li>Сварочные аппараты, сварочные насадки</li>
+                        <li>Ножницы труборезные, дисковые труборезы</li>
+                        <li>Ленточные ключи, торцеватели</li>
+                        <li>Шейверы, обрезные диски, лезвия</li>
+                    </ul>
+                </div>
+                <div class="card-image" style="padding-right: 10px;">
+                    <img src="{% static 'img/Fusitek/Инструменты.jpg' %}"
+                    style="max-width: 180px; height: auto; margin-top: 30px;">
+                </div>
+            </div>
+
+
+            <div class="card2">
+        <a href="{% url 'download_document_fusitek' 'Fusitek' %}">
+            <img src="{% static 'img/Fusitek/down_fus.png' %}" alt="Fusitek" style="width: 400px; height: auto; display: block; margin: 0 auto;">
+            <h3 style="text-align: center;">Скачать прайс Fusitek</h3>
+        </a>
+    </div>
+    <div class="card2">
+        <a href="{% url 'download_document_fusitek' 'FusionPlast' %}">
+            <img src="{% static 'img/Fusitek/FusionPlast.jpg' %}" alt="FusionPlast" style="width: 400px; height: auto; display: block; margin: 0 auto;">
+            <h3 style="text-align: center;">Скачать прайс FusionPlast</h3>
+        </a>
+    </div>
+
+</div>
+
+</section>
+
+<hr>
+
+{% endblock content %}

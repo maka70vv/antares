@@ -1,6 +1,8 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
+
+<link href="{% static "css/style2.css"%}" rel="stylesheet">
 	<div id="headerwrap">
     <div class="container">
         <div class="row">
@@ -31,7 +33,9 @@
                 <div id="exp" class="experts_box">
                     <div class="experts_img">
                         <figure>
-                            <img src="{% static 'img/portfolio/5.png' %}" alt="#" class="img-responsive"/>
+                             <a href="{% url 'fusitek' %}"> <!-- Добавили ссылку -->
+                    <img src="{% static 'img/portfolio/5.png' %}" alt="#" class="img-responsive"/>
+                </a>
                             <div class="price">FUSITEK</div>
                         </figure>
                     </div>
