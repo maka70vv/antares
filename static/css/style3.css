@@ -532,3 +532,18 @@ a:hover .button {
             max-width: 160px;
             margin-bottom: 10px;
         }
+
+        /*SINIKON*/
+
+        .price_sinikon {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .price_sinikon img {
+            max-width: 260px;
+            margin-bottom: 10px;
+        }
+
