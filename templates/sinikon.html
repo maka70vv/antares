@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <hr>
+    <link rel="stylesheet" href="{% static 'css/style3.css' %}">
+
+    <section id="works2">
+        <div id="overlay">
+            <div class="header">
+                <div class="header-card">
+                    <img src="{% static 'img/Sinikon/sinikon.jpg' %}" alt="Sinikon Логотип">
+                </div>
+            </div>
+
+            <div class="header-card">
+                <h1>«СИНИКОН» – российский производитель трубной продукции европейского качества!</h1>
+                <p>
+                    Компания «СИНИКОН» поставляет на рынок комплексные решения для систем канализации и
+                    водоотведения. Все элементы систем произведены из современных полимерных
+                    материалов высочайшего качества.
+                </p>
+            </div>
+
+            <div class="advantages">
+                <div class="col-md-4 gallery">
+                    <div id="exp" class="experts_box">
+                        <div class="experts_img">
+                            <figure>
+                                <a href="{% url 'sinikon' %}">
+                                    <img src="{% static 'img/portfolio/3.png' %}" alt="#" class="img-responsive"/>
+                                    <div class="price">SINIKON</div>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 gallery">
+                    <div id="exp" class="experts_box">
+                        <div class="experts_img">
+                            <figure>
+                                <a href="{% url 'sinikon' %}">
+                                    <img src="{% static 'img/portfolio/3.png' %}" alt="#" class="img-responsive"/>
+                                    <div class="price">SINIKON</div>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 gallery">
+                    <div id="exp" class="experts_box">
+                        <div class="experts_img">
+                            <figure>
+                                <a href="{% url 'sinikon' %}">
+                                    <img src="{% static 'img/portfolio/3.png' %}" alt="#" class="img-responsive"/>
+                                    <div class="price">SINIKON</div>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 gallery">
+                    <div id="exp" class="experts_box">
+                        <div class="experts_img">
+                            <figure>
+                                <a href="{% url 'sinikon' %}">
+                                    <img src="{% static 'img/portfolio/3.png' %}" alt="#" class="img-responsive"/>
+                                    <div class="price">SINIKON</div>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card2">
+                    <a href="{% url 'download_document_fusitek' 'Fusitek' %}">
+                        <img src="{% static 'img/Fusitek/down_fus.png' %}" alt="Fusitek"
+                             style="width: 400px; height: auto; display: block; margin: 0 auto;">
+                        <h3 style="text-align: center;">Скачать прайс Fusitek</h3>
+                    </a>
+                </div>
+                <div class="card2">
+                    <a href="{% url 'download_document_fusitek' 'FusionPlast' %}">
+                        <img src="{% static 'img/Fusitek/FusionPlast.jpg' %}" alt="FusionPlast"
+                             style="width: 400px; height: auto; display: block; margin: 0 auto;">
+                        <h3 style="text-align: center;">Скачать прайс FusionPlast</h3>
+                    </a>
+                </div>
+
+            </div>
+
+    </section>
+
+    <hr>
+
+{% endblock content %}

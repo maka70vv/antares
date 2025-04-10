@@ -9,8 +9,11 @@ def index(request):
 def page_not_found_view(request, exception):
     return render(request, "404.html", status=404)
 
-def fusitek(reguest):
-    return render(reguest, 'fusitek.html')
+def fusitek(request):
+    return render(request, 'fusitek.html')
+
+def sinikon(request):
+    return render(request, 'sinikon.html')
 
 def download_document_fusitek(request, doc_type):
     document = get_object_or_404(DocumentFusitek, doc_type=doc_type)
