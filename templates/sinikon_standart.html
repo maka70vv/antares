@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <hr>
+    <link rel="stylesheet" href="{% static 'css/style_sinikon_standart.css' %}">
+
+    <section id="works2">
+        <div id="overlay">
+            <div class="header">
+                <div class="header-card">
+                    <img src="{% static 'img/Sinikon/sinikon_standart_logo.png' %}" alt="Sinikon Standart Логотип">
+                </div>
+            </div>
+
+            <div class="header-card">
+                <h1>СИНИКОН Стандарт – полипропиленовая система внутренней канализации</h1>
+                <p>В настоящее время все чаще как при новом строительстве, так и при реконструкции существующих сетей,
+                    используются трубопроводные системы из полипропилена.</p>
+
+                <p>Такая популярность полипропиленовых труб и фитингов обусловливается их неоспоримыми преимуществами
+                    по сравнению с традиционными материалами (чугун, сталь, медь, железобетон, полиэтилен).</p>
+
+                <p>Завод «Синикон» выпускает широккий ассортимент труб и фитингов системы СИНИКОН Стандарт
+                    для безнапорных трубопроводных систем внутренней бытовой
+                    канализации, обладающие рядом неоспоримых достоинств.</p>
+            </div>
+
+            <div class="advantages">
+                <div class="card"
+                     style="display: flex; align-items: center; justify-content: space-between; padding: 10px;">
+                    <div class="card-text" style="flex: 1;">
+                        <h3>ГОСТ и EN-1451</h3>
+                        <p>СИНИКОН Стандарт выпускается в соответствии с российским ГОСТ 32414-2013
+                                и европейским EN 1451-1</p>
+                    </div>
+                    <div class="card-image" style="padding-right: 10px;">
+                        <img src="{% static 'img/Sinikon/sinikon-standart.png' %}"
+                             style="max-width: 180px; height: auto; margin-top: 30px;">
+                    </div>
+                </div>
+                <div class="card"
+                     style="display: flex; align-items: center; justify-content: space-between; padding: 10px;">
+                    <div class="card-text" style="flex: 1;">
+                        <h3>Повышенная химическая стойкость</h3>
+                        <p>Система может применяться при транспортировке сточных вод в широком диапазоне pH от 2 до 12</p>
+                    </div>
+                    <div class="card-image" style="padding-right: 10px;">
+                        <img src="{% static 'img/Sinikon/sinikon_standart2.png' %}"
+                             style="max-width: 180px; height: auto; margin-top: 30px;">
+                    </div>
+                </div>
+
+
+
+                <div class="price_sinikon">
+                    <a href="{% url 'download_document_fusitek' 'Fusitek' %}">
+                        <img src="{% static 'img/Sinikon/sinikon_standart_logo.png' %}" alt="Sinikon"
+                             style="width: 400px; height: auto; display: block; margin: 0 auto;">
+                        <h3 style="text-align: center;">Скачать прайс Sinikon Standart</h3>
+                    </a>
+                </div>
+
+            </div>
+
+    </section>
+
+    <hr>
+
+{% endblock content %}
