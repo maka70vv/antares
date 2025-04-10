@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <hr>
+    <link rel="stylesheet" href="{% static 'css/style3.css' %}">
+
+    <section id="works2">
+        <div id="overlay">
+            <div class="header">
+                <div class="header-card">
+                    <img src="{% static 'img/Sinikon/sinikon.jpg' %}" alt="Sinikon Логотип">
+                </div>
+            </div>
+
+            <div class="header-card">
+                <h1>«СИНИКОН» – российский производитель трубной продукции европейского качества!</h1>
+                <p>
+                    Компания «СИНИКОН» поставляет на рынок комплексные решения для систем канализации и
+                    водоотведения. Все элементы систем произведены из современных полимерных
+                    материалов высочайшего качества.
+                </p>
+            </div>
+
+            <div class="advantages">
+                <div class="col-md-5 gallery">
+                    <div id="exp" class="experts_box">
+                        <div class="experts_img">
+                            <figure>
+                                <a href="{% url 'sinikon_standart' %}">
+                                    <img src="{% static 'img/Sinikon/sinikon_standart_logo.png' %}" alt="#" class="img-responsive"/>
+                                    <div class="price">SINIKON STANDART</div>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 gallery">
+                    <div id="exp" class="experts_box">
+                        <div class="experts_img">
+                            <figure>
+                                <a href="{% url 'sinikon_comfort' %}">
+                                    <img src="{% static 'img/Sinikon/sinikon_comfort_logo.png' %}" alt="#" class="img-responsive"/>
+                                    <div class="price">SINIKON COMFORT</div>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 gallery">
+                    <div id="exp" class="experts_box">
+                        <div class="experts_img">
+                            <figure>
+                                <a href="{% url 'sinikon_rain_flow' %}">
+                                    <img src="{% static 'img/Sinikon/sinikon_rain_flow_logo.png' %}" alt="#" class="img-responsive"/>
+                                    <div class="price">SINIKON RAIN FLOW</div>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 gallery">
+                    <div id="exp" class="experts_box">
+                        <div class="experts_img">
+                            <figure>
+                                <a href="{% url 'sinikon_universal' %}">
+                                    <img src="{% static 'img/Sinikon/sinikon_universal_logo.png' %}" alt="#" class="img-responsive"/>
+                                    <div class="price">SINIKON UNIVERSAL</div>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+
+{#                <div class="price_sinikon">#}
+{#                    <a href="{% url 'download_document_fusitek' 'Fusitek' %}">#}
+{#                        <img src="{% static 'img/Sinikon/sinikon.jpg' %}" alt="Sinikon"#}
+{#                             style="width: 400px; height: auto; display: block; margin: 0 auto;">#}
+{#                        <h3 style="text-align: center;">Скачать прайс Sinikon</h3>#}
+{#                    </a>#}
+{#                </div>#}
+
+            </div>
+
+    </section>
+
+    <hr>
+
+{% endblock content %}
