@@ -19,7 +19,7 @@ def sinikon_standart(request):
     return render(request, 'sinikon_standart.html')
 
 def sinikon_comfort(request):
-    return render(request, 'sinikon.html')
+    return render(request, 'sinikon_comfort.html')
 
 def sinikon_rain_flow(request):
     return render(request, 'sinikon.html')

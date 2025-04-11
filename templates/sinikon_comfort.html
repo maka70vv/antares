@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <hr>
+    <link rel="stylesheet" href="{% static 'css/style_sinikon_comfort.css' %}">
+
+    <section id="works2">
+        <div id="overlay">
+            <div class="header">
+                <div class="header-card">
+                    <img src="{% static 'img/Sinikon/sinikon_comfort_logo.png' %}" alt="Sinikon Comfort Логотип">
+                </div>
+            </div>
+
+            <div class="header-card">
+                <h1>СИНИКОН Комфорт – внутренняя канализация с пониженным уровнем шума</h1>
+                <p>
+                    Не секрет, что покупатели нового жилья пристально изучают все аспекты строительства,
+                    в том числе качество используемых материалов и комплектующих. Не обходится без их внимания
+                    и канализационная система, ведь современная система, кроме своей основной функции, должна
+                    отвечать нормам и требованиям к комфортному проживанию в доме или квартире.
+                </p>
+
+                <p>
+                    Канализационная система должна быть не только надежной и долговечной, но и максимально бесшумной.
+                    Уровень шума оказывает значительное влияние на психологическое здоровье и комфорт проживания
+                    в доме.
+                </p>
+
+                <p>
+                    Система СИНИКОН КОМФОРТ изготавливается из пропилена с минеральными добавками, имеет большую плотность
+                    материала и увеличенную толщину стенки по сравнению с обычными полипропиленовыми трубами (3,4мм по
+                    сравнению с "обычными" 2,7мм для труб диаметром 110мм). Причем, в отличие от других производителей,
+                    "СИНИКОН" производит не только трубы с увеличенной толщиной стенки, но и фитинги.
+                </p>
+            </div>
+
+            <div class="advantages">
+                <div class="card"
+                     style="display: flex; align-items: center; justify-content: space-between; padding: 10px;">
+                    <div class="card-text" style="flex: 1;">
+                        <h3>Пониженный уровень шума</h3>
+                        <p>
+                            В 1.5 раза тише стандартной, а значит функционирование системы не мешает жильцам,
+                            особенно ночью
+                        </p>
+                    </div>
+                    <div class="card-image" style="padding-right: 10px;">
+                        <img src="{% static 'img/Sinikon/678424.png' %}"
+                             style="max-width: 180px; height: auto; margin-top: 30px;">
+                    </div>
+                </div>
+                <div class="card"
+                     style="display: flex; align-items: center; justify-content: space-between; padding: 10px;">
+                    <div class="card-text" style="flex: 1;">
+                        <h3>Простой и быстрый монтаж</h3>
+                        <p>
+                            Необходимо меньше времени для монтажа системы большей протяженности. При монтаже не требуются
+                            специальные инструменты.
+                        </p>
+                    </div>
+                    <div class="card-image" style="padding-right: 10px;">
+                        <img src="{% static 'img/Sinikon/kreplenie-2.jpg' %}"
+                             style="max-width: 180px; height: auto; margin-top: 30px;">
+                    </div>
+                </div>
+                <div class="card"
+                     style="display: flex; align-items: center; justify-content: space-between; padding: 10px;">
+                    <div class="card-text" style="flex: 1;">
+                        <h3>Пригодна для t=80°C (краткосрочно до 95°C)</h3>
+                        <p>
+                            Обеспечивает надежный слив из стиральных и посудомоечных машин даже при высоких температурах
+                        </p>
+                    </div>
+                    <div class="card-image" style="padding-right: 10px;">
+                        <img src="{% static 'img/Sinikon/2316581.png' %}"
+                             style="max-width: 180px; height: auto; margin-top: 30px;">
+                    </div>
+                </div>
+                <div class="card"
+                     style="display: flex; align-items: center; justify-content: space-between; padding: 10px;">
+                    <div class="card-text" style="flex: 1;">
+                        <h3>Долговечность</h3>
+                        <p>
+                            Срок эксплуатации: не менее 50 лет
+                        </p>
+                    </div>
+                    <div class="card-image" style="padding-right: 10px;">
+                        <img src="{% static 'img/Sinikon/naruzhnaya-kanalizaczionnaya-sistema.png' %}"
+                             style="max-width: 180px; height: auto; margin-top: 30px;">
+                    </div>
+                </div>
+                <div class="price_sinikon"
+                     style="margin-bottom: 10px; display: flex; align-items: center; justify-content: space-between; padding: 10px;">
+                    <div class="card-text" style="flex: 1;">
+                        <h3>Надежность</h3>
+                        <p>
+                            Использование немецкого двухлепесткового уплотнения обеспечивает надежность стыков и защиту
+                            от протечек и неприятного запаха
+                        </p>
+                    </div>
+                    </div>
+                </div>
+
+
+                <div class="price_sinikon">
+                    <a href="{% url 'download_document_fusitek' 'Fusitek' %}">
+                        <img src="{% static 'img/Sinikon/sinikon_comfort_logo.png' %}" alt="Sinikon"
+                             style="width: 400px; height: auto; display: block; margin: 0 auto;">
+                        <h3 style="text-align: center;">Скачать прайс Sinikon Comfort</h3>
+                    </a>
+                </div>
+
+            </div>
+
+    </section>
+
+    <hr>
+
+{% endblock content %}
