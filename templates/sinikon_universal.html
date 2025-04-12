@@ -1,0 +1,121 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <hr>
+    <link rel="stylesheet" href="{% static 'css/style_sinikon_universal.css' %}">
+
+    <section id="works2">
+        <div id="overlay">
+            <div class="header">
+                <div class="header-card">
+                    <img src="{% static 'img/Sinikon/sinikon_universal_logo.png' %}" alt="Sinikon Universal Логотип">
+                </div>
+            </div>
+
+            <div class="header-card">
+                <h1>СИНИКОН Универсал – система наружной канализации</h1>
+                <p>
+                    Системы наружной канализации - важный элемент как городской среды, так и частного строительства.
+                    От качества и долговечности материалов, использованных при монтаже наружной канализации,
+                    зависят удобство проживания, сроки эксплуатации и экология окружающей среды. Нарушение работы
+                    канализационных систем может значительно ухудшить качество жизни людей и создать проблемы как
+                    городским службам, так и владельцам частных домов.
+                </p>
+
+                <p>
+                    Не зря говорят: "Качество - в мелочах". Использование современных труб и фитингов из полипропилена
+                    может избавить от многих проблем в будущем.
+                </p>
+
+                <p>
+                    Канализационные трубы Синикон обладают рядом преимуществ по сравнению с "традиционными" материалами.
+                    Созданные из высококачественного полипропилена, трубы и фитинги являются наиболее оптимальным
+                    решением для систем наружной канализации.
+                </p>
+            </div>
+
+            <div class="advantages">
+                <div class="card"
+                     style="display: flex; align-items: center; justify-content: space-between; padding: 10px;">
+                    <div class="card-text" style="flex: 1;">
+                        <h3>Стойкость к высокой температуре</h3>
+                        <p>
+                            Выдерживает высокую, до +95°C, температуру сточных вод
+                        </p>
+                    </div>
+                    <div class="card-image" style="padding-right: 10px;">
+                        <img src="{% static 'img/Sinikon/2316581.png' %}"
+                             style="max-width: 180px; height: auto; margin-top: 30px;">
+                    </div>
+                </div>
+                <div class="card"
+                     style="display: flex; align-items: center; justify-content: space-between; padding: 10px;">
+                    <div class="card-text" style="flex: 1;">
+                        <h3>Простой и быстрый монтаж</h3>
+                        <p>
+                            Необходимо меньше времени для монтажа системы большей протяженности. При монтаже не
+                            требуются
+                            специальные инструменты.
+                        </p>
+                    </div>
+                    <div class="card-image" style="padding-right: 10px;">
+                        <img src="{% static 'img/Sinikon/kreplenie-2.jpg' %}"
+                             style="max-width: 180px; height: auto; margin-top: 30px;">
+                    </div>
+                </div>
+                <div class="card"
+                     style="display: flex; align-items: center; justify-content: space-between; padding: 10px;">
+                    <div class="card-text" style="flex: 1;">
+                        <h3>Высокая химическая стойкость</h3>
+                        <p>
+                            Высокая химическая стойкость к действию большинства агрессивных сред, под воздействием
+                            которых традиционные материалы корродируют и стареют
+                        </p>
+                    </div>
+                    <div class="card-image" style="padding-right: 10px;">
+                        <img src="{% static 'img/Sinikon/image-Photoroom.png' %}"
+                             style="max-width: 180px; height: auto; margin-top: 30px;">
+                    </div>
+                </div>
+                <div class="card"
+                     style="display: flex; align-items: center; justify-content: space-between; padding: 10px;">
+                    <div class="card-text" style="flex: 1;">
+                        <h3>Диэлектрические свойства</h3>
+                        <p>
+                            Не проводят ток и, соответственно, не подвержены ускоренному старению вблизи кабельных трасс
+                            (в городах и промзонах)
+                        </p>
+                    </div>
+                    <div class="card-image" style="padding-right: 10px;">
+                        <img src="{% static 'img/Sinikon/image-Photoroom (1).png' %}"
+                             style="max-width: 180px; height: auto; margin-top: 30px;">
+                    </div>
+                </div>
+
+                <div class="price_sinikon"
+                     style="display: flex; align-items: center; justify-content: space-between; padding: 10px;">
+                    <div class="card-text" style="flex: 1;">
+                        <h3>Низкая шероховатость</h3>
+                        <p>
+                            Низкий коэффициент шероховатости дает возможность использования минимальных уклонов,
+                            практически отсутствует зарастание труб
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="price_sinikon">
+                    <a href="{% url 'download_document_fusitek' 'Fusitek' %}">
+                        <img src="{% static 'img/Sinikon/sinikon_universal_logo.png' %}" alt="Sinikon"
+                             style="width: 400px; height: auto; display: block; margin: 0 auto;">
+                        <h3 style="text-align: center;">Скачать прайс Sinikon Universal</h3>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <hr>
+
+{% endblock content %}

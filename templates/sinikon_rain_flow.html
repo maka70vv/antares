@@ -1,0 +1,136 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <hr>
+    <link rel="stylesheet" href="{% static 'css/style_sinikon_rain_flow.css' %}">
+
+    <section id="works2">
+        <div id="overlay">
+            <div class="header">
+                <div class="header-card">
+                    <img src="{% static 'img/Sinikon/sinikon_rain_flow_logo.png' %}" alt="Sinikon Rain Flow Логотип">
+                </div>
+            </div>
+
+            <div class="header-card">
+                <h1>СИНИКОН Rain Flow – системы внутренних водостоков</h1>
+                <p>
+                    Современное многоэтажное строительство невозможно представить без качественной системы
+                    внутренних водостоков. Она устанавливается внутри обогреваемых зданий и обеспечивает отвод
+                    дождевых и талых вод с кровель жилых и промышленных зданий
+                </p>
+
+                <p>
+                    Основной особенностью внутренних водостоков является то, что водосточные стояки и
+                    отводные трубопроводы должны выдерживать давление столба воды, возникающее при засорах и
+                    переполнениях системы.
+                </p>
+
+                <p>
+                    Максимальное давление, которое может возникнуть в трубе, определяется высотой от
+                    водоприемной воронки до выпуска. Понимая возможность аварии и ее печальные последствия для всех
+                    жильцов дома, стоит подойти к выбору труб и фасонных изделий ответственно и придирчиво.
+                </p>
+            </div>
+
+            <div class="advantages">
+                <div class="card"
+                     style="display: flex; align-items: center; justify-content: space-between; padding: 10px;">
+                    <div class="card-text" style="flex: 1;">
+                        <h3>Выдерживают большие перепады температур</h3>
+                        <p>
+                            Монтаж труб можно вести при температуре до -10°C
+                        </p>
+                    </div>
+                    <div class="card-image" style="padding-right: 10px;">
+                        <img src="{% static 'img/Sinikon/2316581.png' %}"
+                             style="max-width: 180px; height: auto; margin-top: 30px;">
+                    </div>
+                </div>
+                <div class="card"
+                     style="display: flex; align-items: center; justify-content: space-between; padding: 10px;">
+                    <div class="card-text" style="flex: 1;">
+                        <h3>Простой и быстрый монтаж</h3>
+                        <p>
+                            Необходимо меньше времени для монтажа системы большей протяженности. При монтаже не
+                            требуются
+                            специальные инструменты.
+                        </p>
+                    </div>
+                    <div class="card-image" style="padding-right: 10px;">
+                        <img src="{% static 'img/Sinikon/kreplenie-2.jpg' %}"
+                             style="max-width: 180px; height: auto; margin-top: 30px;">
+                    </div>
+                </div>
+                <div class="card"
+                     style="display: flex; align-items: center; justify-content: space-between; padding: 10px;">
+                    <div class="card-text" style="flex: 1;">
+                        <h3>Низкий уровень шума</h3>
+                        <p>
+                            Уровень шума от функционирования системы снижен за счет увеличенной толщины стенок
+                        </p>
+                    </div>
+                    <div class="card-image" style="padding-right: 10px;">
+                        <img src="{% static 'img/Sinikon/678424.png' %}"
+                             style="max-width: 180px; height: auto; margin-top: 30px;">
+                    </div>
+                </div>
+                <div class="card"
+                     style="display: flex; align-items: center; justify-content: space-between; padding: 10px;">
+                    <div class="card-text" style="flex: 1;">
+                        <h3>Долговечность</h3>
+                        <p>
+                            Срок эксплуатации: не менее 50 лет
+                        </p>
+                    </div>
+                    <div class="card-image" style="padding-right: 10px;">
+                        <img src="{% static 'img/Sinikon/naruzhnaya-kanalizaczionnaya-sistema.png' %}"
+                             style="max-width: 180px; height: auto; margin-top: 30px;">
+                    </div>
+                </div>
+                <div class="card"
+                     style="display: flex; align-items: center; justify-content: space-between; padding: 10px;">
+                    <div class="card-text" style="flex: 1;">
+                        <h3>Надежность</h3>
+                        <p>
+                            Использование немецкого двухлепесткового уплотнения обеспечивает надежность стыков и защиту
+                            от протечек
+                        </p>
+                    </div>
+
+                    <div class="card-image" style="padding-right: 10px;">
+                        <img src="{% static 'img/Sinikon/1253977.png' %}"
+                             style="max-width: 180px; height: auto; margin-top: 30px;">
+                    </div>
+                </div>
+                <div class="card"
+                     style="display: flex; align-items: center; justify-content: space-between; padding: 10px;">
+                    <div class="card-text" style="flex: 1;">
+                        <h3>Не подвержены коррозии</h3>
+                        <p>
+                            В отличие от других водостоков
+                        </p>
+                    </div>
+
+                    <div class="card-image" style="padding-right: 10px;">
+                        <img src="{% static 'img/Sinikon/no_corrosia-Photoroom.png' %}"
+                             style="max-width: 180px; height: auto; margin-top: 30px;">
+                    </div>
+                </div>
+
+
+                <div class="price_sinikon">
+                    <a href="{% url 'download_document_fusitek' 'Fusitek' %}">
+                        <img src="{% static 'img/Sinikon/sinikon_rain_flow_logo.png' %}" alt="Sinikon"
+                             style="width: 400px; height: auto; display: block; margin: 0 auto;">
+                        <h3 style="text-align: center;">Скачать прайс Sinikon Rain Flow</h3>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <hr>
+
+{% endblock content %}

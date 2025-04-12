@@ -19,13 +19,13 @@ def sinikon_standart(request):
     return render(request, 'sinikon_standart.html')
 
 def sinikon_comfort(request):
-    return render(request, 'sinikon.html')
+    return render(request, 'sinikon_comfort.html')
 
 def sinikon_rain_flow(request):
-    return render(request, 'sinikon.html')
+    return render(request, 'sinikon_rain_flow.html')
 
 def sinikon_universal(request):
-    return render(request, 'sinikon.html')
+    return render(request, 'sinikon_universal.html')
 
 def download_document_fusitek(request, doc_type):
     document = get_object_or_404(DocumentFusitek, doc_type=doc_type)
